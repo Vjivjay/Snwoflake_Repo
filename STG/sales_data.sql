@@ -4,6 +4,7 @@ CREATE OR REPLACE TABLE sales_data (
     customer_id     INT,
     sale_date       DATE,
     quantity        INT,
+    date            DATE DEFAULT CURRENT_DATE,
     sale_amount     NUMBER(10, 2),
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
